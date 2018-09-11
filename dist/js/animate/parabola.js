@@ -1,0 +1,1 @@
+function parabola(c,d){var e=-.002,a={x:c.offsetLeft,y:c.offsetTop},f={x:d.x-a.x,y:-(d.y-a.y)},g=(f.y-e*f.x*f.x)/f.x,b=0;window.requestAnimationFrame(function(){return c.style.left=a.x+b+"px",c.style.top=a.y-(e*b*b+g*b)+"px",b+=7,c.offsetLeft>=d.x?(c.style.left=d.x+"px",void(c.style.top=d.y+"px")):void window.requestAnimationFrame(arguments.callee)})}
